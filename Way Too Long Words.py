@@ -9,7 +9,6 @@ def ans(arr):
             temp=arr[j]
 
             arr[j]=temp[0]+str(len(temp[1:-1]))+temp[-1]
-    
-    return arr
+        print(arr[j])
 
-print(ans(arr))
+ans(arr)
