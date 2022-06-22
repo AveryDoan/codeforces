@@ -1,11 +1,8 @@
-n=int(input())
-arr=[]
-for i in range (n):
-    arr.append(input())
-
-for j in range(len(arr)):
-    if len(arr[j])>=10:
-        temp=arr[j]
-        arr[j]=temp[0]+str(len(temp[1:-1]))+temp[-1]
-    print(arr[j])
-
+n = int(input())
+for i in range(n):
+    arr = input()
+    l = len(arr)
+    if l <= 10:
+        print(arr)
+    else:
+        print(arr[0], l - 2, arr[-1], sep="")
